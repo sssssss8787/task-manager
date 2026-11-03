@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 3000;
-const TITLE = 'Task Manager: список задач';
+const TITLE = 'Task Manager API';
 
 const routes = { '/': () => ({ title: TITLE }) };
 for (const file of fs.readdirSync(path.join(__dirname, 'routes'))) {
